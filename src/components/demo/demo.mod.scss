@@ -1,0 +1,14 @@
+@import 'helpers';
+
+.demo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 4rem;
+
+    h2 {
+        color: darkblue;
+    }
+}

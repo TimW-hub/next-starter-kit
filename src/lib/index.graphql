@@ -1,0 +1,8 @@
+query HomePageQuery {
+  allJobs {
+    id
+    name
+    _status
+    _firstPublishedAt
+  }
+}

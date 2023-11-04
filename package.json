@@ -1,6 +1,10 @@
 {
   "name": "next-raidcd",
   "version": "0.1.0",
+  "description": "FFXIV Raid CD planning website! React/Next/DatoCMS",
+  "main": "index.js",
+  "repository": "https://github.com/TimW-hub/jsx-raidcd.git",
+  "author": "Tim Williams",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,9 +13,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
+    "datocms-client": "^3.5.21",
+    "graphql": "^16.8.1",
+    "graphql-request": "^6.1.0",
+    "graphql-tag": "^2.12.6",
+    "next": "14.0.1",
+    "react": "^18.2.6",
     "react-dom": "^18",
-    "next": "14.0.1"
+    "sass": "^1.69.5"
   },
   "devDependencies": {
     "eslint": "^8",
