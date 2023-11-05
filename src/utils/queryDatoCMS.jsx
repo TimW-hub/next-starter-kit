@@ -5,7 +5,6 @@ const dedupedFetch = cache(async (serializedInit) => {
     JSON.parse(serializedInit)
   );
   const responseBody = await response.json();
-  console.log("dedupedfetchresponse", response);
   if (!response.ok) {
     throw new Error(
       `${response.status} ${response.statusText}: ${JSON.stringify(

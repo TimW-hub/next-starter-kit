@@ -1,0 +1,35 @@
+$breakpoints: (
+  'small': 767px,
+  'medium': 992px,
+  'large': 1200px,
+) !default;
+
+@use 'sass:math';
+
+/// Mixin to manage responsive breakpoints
+/// @param {string} $breakpoint - Breakpoint name
+/// @require $breakpoints
+@mixin breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. " + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+@mixin breakpoint-down($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: (map-get($breakpoints, $breakpoint) - 1px)) {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. " + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+@function rem-calc($value) {
+  $remValue: math.div($value, 16) + rem;
+  @return $remValue;
+}

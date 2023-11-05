@@ -1,0 +1,7 @@
+@import './globals/helpers';
+
+.nav {
+    background-color: $primary-900;
+    color: $white;
+    padding: rem-calc(24);
+}

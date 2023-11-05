@@ -1,0 +1,38 @@
+// ------------ COLOURS ----------- //
+
+$primary-200: #85cff9;
+$primary-400: #1d9ae4;
+$primary-600: #0e5178;
+$primary-700: #09324a;
+$primary-900: #04131b;
+
+$black: #000;
+$dark: #01090d;
+$dark-grey: #2d3336;
+$grey: #717475;
+$light-grey: #c3c9cb;
+$white: #fff;
+
+// ------------ SPACING ----------- //
+
+$global-borders: 1rem;
+$gutters: 1rem;
+
+// ------------ GENERAL ----------- //
+
+$global-border-radius: 0.5rem;
+
+// ------------ FORMS ----------- //
+
+$form-error: red;
+
+// ------------ TYPOGRAPHY ----------- //
+
+@mixin heading-sm {
+  font-size: rem-calc(22);
+  line-height: rem-calc(28);
+  @include breakpoint(medium) {
+    font-size: rem-calc(26);
+    line-height: rem-calc(32);
+  }
+}
