@@ -1,4 +1,4 @@
-import { PerformRequest } from './queryDatoCMS';
+import { PerformRequest } from './datocms';
 
 export async function FetchData({ query, variables, revalidate = false }) {
   try {

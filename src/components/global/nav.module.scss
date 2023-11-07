@@ -1,0 +1,14 @@
+@import '@/styles/helpers';
+
+.nav {
+    background-color: $dark;
+    color: $white;
+    padding: rem-calc(24);
+
+    &__logo {
+        svg {
+            width: rem-calc(40);
+            fill: $primary-400;
+        }
+    }
+}

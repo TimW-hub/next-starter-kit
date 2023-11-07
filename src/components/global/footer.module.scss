@@ -1,0 +1,7 @@
+@import '@/styles/helpers';
+
+.footer {
+    background-color: $dark;
+    color: $white;
+    padding: rem-calc(72) rem-calc(24);
+}

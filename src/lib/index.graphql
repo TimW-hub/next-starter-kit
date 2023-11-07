@@ -5,4 +5,24 @@ query HomePageQuery {
     _status
     _firstPublishedAt
   }
+  landingPage {
+    heading
+    text
+    heroImage {
+      responsiveImage(imgixParams: { w: "2000", h: "1000", fit: crop }) {
+        src
+        width
+        height
+      }
+    }
+  }
+  global {
+    siteLogo {
+      responsiveImage(imgixParams: { w: "48", h: "36", fit: crop }) {
+        src
+        width
+        height
+      }
+    }
+  }
 }
